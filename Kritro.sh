@@ -3,7 +3,7 @@
 #  Kritro.sh
 #  
 #
-#  Created by Kritro on 23/8/11.
+#  Created by Kritro on 16/8/23.
 #
 
 function install() {
