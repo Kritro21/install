@@ -1,19 +1,7 @@
 #!/bin/sh
 
-#  Kritro.sh
-#  
-#
-#  Created by Kritro on 23/8/11.
-#
-
 function install() {
     echo "阿里云的朋友，可以一试，确定按照这里的操作无误，还是无法成功，另找他法吧"
-	echo "阿里云的朋友，可以一试，确定按照这里的操作无误，还是无法成功，另找他法吧"
-	echo "阿里云的朋友，可以一试，确定按照这里的操作无误，还是无法成功，另找他法吧"
-	echo "阿里云的朋友，可以一试，确定按照这里的操作无误，还是无法成功，另找他法吧"
-	echo "阿里云的朋友，可以一试，确定按照这里的操作无误，还是无法成功，另找他法吧"
-	echo "阿里云的朋友，可以一试，确定按照这里的操作无误，还是无法成功，另找他法吧"
-	echo "阿里云的朋友，可以一试，确定按照这里的操作无误，还是无法成功，另找他法吧"
     read -p "输入centOS版本，例如5.11 输入5 然后回车：" versionNumber
 #TODO:直接取系统版本号判断，再检测文件是否存在，不符合都跳出
     read -p "输入服务器环境 2.自行更换证书及pvf文件 3.自带Kritro.tar.gz及证书及pvf文件(此项开始前要确保根目录下存在Kritro.tar.gz、publickey.pem、Script.pvf)，优先选3，然后回车：" networkState
@@ -42,7 +30,7 @@ function getIP() {
 
 function addSwap() {
     echo "添加 Swap..."
-#   if read -n1 -p "请输入虚拟内存大小（正整数、单位为GB、默认6  GB）" answer
+#   if read -n1 -p "请输入虚拟内存大小（正整数、单位为GB、默认8GB）" answer
 #   then
 #   /bin/dd if=/dev/zero of=/var/swap.Kritro bs=1M count=1000*$answer
     /bin/dd if=/dev/zero of=/var/swap.Kritro bs=1M count=8000
@@ -185,7 +173,7 @@ function removeTemp() {
     esac
 }
 
-install
+
 echo "********************************************************"
 echo "                   IP = ${IP}"
 echo "          感谢您使用Kritro一键架设DNF商业版!"
