@@ -2,7 +2,6 @@
 
 #  Kritro.sh
 #  
-#
 #  Created by Kritro on 16/8/23.
 #
 
